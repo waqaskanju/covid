@@ -37,7 +37,7 @@ const Details = () => {
           <Link to="/">
             <FontAwesomeIcon icon={faArrowLeft} />
           </Link>
-          <h5 className="App-header-title">view Detailed</h5>
+          <h5 className="App-header-title">Detail View</h5>
           <FontAwesomeIcon icon={faMicrophone} />
           <div className="pl-5">
             <FontAwesomeIcon icon={faGear} />
@@ -84,7 +84,7 @@ const Details = () => {
         <Link to="/">
           <FontAwesomeIcon icon={faArrowLeft} />
         </Link>
-        <h5 className="App-header-title">view Detailed</h5>
+        <h5 className="App-header-title">Detail View</h5>
         <FontAwesomeIcon icon={faMicrophone} />
         <div className="pl-5">
           <FontAwesomeIcon icon={faGear} />

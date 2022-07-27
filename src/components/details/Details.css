@@ -1,3 +1,17 @@
+.Details-item-title {
+  font-family: GillSansMedium, sans-serif;
+  font-size: 20px;
+}
+
+.Details-item {
+  padding: 24px 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
 .Details-banner {
   padding: 24px;
   display: flex;
@@ -17,22 +31,8 @@
   align-items: flex-start;
 }
 
-.Details-item {
-  padding: 24px 8px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
 .Details-item:nth-child(odd) {
   background-color: rgba(225, 225, 225, 0.08);
-}
-
-.Details-item-title {
-  font-family: GillSansMedium, sans-serif;
-  font-size: 20px;
 }
 
 .Details-item-right {

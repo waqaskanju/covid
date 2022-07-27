@@ -7,12 +7,12 @@ import formatNumber from '../utils/formatNumber';
 import './Home.css';
 
 // Load Map of each continent.
-import Asia from '../../assets/asia.png';
-import Africa from '../../assets/africa.png';
-import Europe from '../../assets/europe.png';
-import NorthAmerica from '../../assets/americaN.png';
-import SouthAmerica from '../../assets/americaS.png';
-import Oceania from '../../assets/oceani.png';
+import Asia from '../../assets/Asia.png';
+import Africa from '../../assets/Africa.png';
+import Europe from '../../assets/Europe.png';
+import NorthAmerica from '../../assets/North_America.png';
+import SouthAmerica from '../../assets/South_America.png';
+import Oceania from '../../assets/Oceania.png';
 import Grid from './Grid';
 
 // Options for drop down menu.
