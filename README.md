@@ -109,6 +109,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - This file is adopted from Microverse. Thanks for assome there work.
+- The css strucutre is taken from Cretive Common Website [Link](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ## 📝 License
 
