@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear, faGlobe, faMicrophone } from '@fortawesome/free-solid-svg-icons';
-import { fetchCountries } from '../../redux/countries/countries';
+import { fetchContinent } from '../../redux/countries/countries';
 import formatNumber from '../utils/formatNumber';
 import './Home.css';
 import Africa from '../../assets/afric.png';
@@ -37,7 +37,7 @@ const Home = () => {
   const handleChange = (event) => {
     setSelected(event.target.value);
     continent = event.target.value;
-    dispatch(fetchCountries(continent));
+    dispatch(fetchContinent(continent));
     if (event.target.value === 'Africa') {
       map = Africa;
     } else if (event.target.value === 'Asia') {
@@ -55,7 +55,7 @@ const Home = () => {
 
   useEffect(() => {
     if (!items.length) {
-      dispatch(fetchCountries(continent));
+      dispatch(fetchContinent(continent));
     }
   }, []);
 

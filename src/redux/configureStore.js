@@ -1,16 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
 import { loadingBarReducer } from 'react-redux-loading-bar';
-import countriesReducer, { fetchCountries } from './countries/countries';
+import continentReducer, { fetchContinent } from './countries/countries';
 
 const store = configureStore({
   reducer: {
     loadingBar: loadingBarReducer,
-    countries: countriesReducer,
+    countries: continentReducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 
-store.dispatch(fetchCountries());
+store.dispatch(fetchContinent());
 
 export default store;
