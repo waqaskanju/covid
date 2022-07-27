@@ -33,7 +33,7 @@ Tools
 Covid 19
 
 # Live Demo
- [Live Link Heroku](https://covid-19-wsk.herokuapp.com/)
+ [Live Link](https://62e1afc66146f605f91417ee--covid-wsk.netlify.app/)
 <!-- [Live Link Netlify](https://62c71fa33074b5205add1b31--profound-pegasus-6e0c9a.netlify.app/) -->
 Comming Soon
 
