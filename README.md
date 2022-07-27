@@ -33,8 +33,8 @@ Tools
 Covid 19
 
 # Live Demo
-<!-- [Live Link Heroku](https://hcalculator-app.herokuapp.com/)
-[Live Link Netlify](https://62c71fa33074b5205add1b31--profound-pegasus-6e0c9a.netlify.app/) -->
+ [Live Link Heroku](https://covid-19-wsk.herokuapp.com/)
+<!-- [Live Link Netlify](https://62c71fa33074b5205add1b31--profound-pegasus-6e0c9a.netlify.app/) -->
 Comming Soon
 
 ## Getting Started
