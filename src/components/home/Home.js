@@ -5,26 +5,32 @@ import { faGear, faGlobe, faMicrophone } from '@fortawesome/free-solid-svg-icons
 import { fetchContinent } from '../../redux/countries/countries';
 import formatNumber from '../utils/formatNumber';
 import './Home.css';
-import Africa from '../../assets/afric.png';
-import Europe from '../../assets/europe.png';
+
+// Load Map of each continent.
 import Asia from '../../assets/asia.png';
+import Africa from '../../assets/africa.png';
+import Europe from '../../assets/europe.png';
 import NorthAmerica from '../../assets/americaN.png';
 import SouthAmerica from '../../assets/americaS.png';
 import Oceania from '../../assets/oceani.png';
 import Grid from './Grid';
 
+// Options for drop down menu.
 const optionSelect = [
-  { value: '', label: 'Filter' },
-  { value: 'Africa', label: 'Africa' },
+  { value: '', label: 'Select Continent' },
   { value: 'Asia', label: 'Asia' },
+  { value: 'Africa', label: 'Africa' },
   { value: 'Europe', label: 'Europe' },
-  { value: 'North America', label: 'North America' },
   { value: 'Oceania', label: 'Oceania' },
+  { value: 'North America', label: 'North America' },
   { value: 'South America', label: 'South America' },
 ];
-let continent = 'Africa';
-let map = Africa;
 
+// Default value when nothing is initially selected.
+let continent = 'Asia';
+let map = Asia;
+
+// Load first value from dropdown.
 const Home = () => {
   const [selected, setSelected] = useState(optionSelect[0].value);
 
@@ -34,25 +40,29 @@ const Home = () => {
     loading: state.loadingBar.default,
   }));
 
+  // When selection is changed.
   const handleChange = (event) => {
     setSelected(event.target.value);
     continent = event.target.value;
     dispatch(fetchContinent(continent));
-    if (event.target.value === 'Africa') {
-      map = Africa;
-    } else if (event.target.value === 'Asia') {
+    if (event.target.value === 'Asia') {
       map = Asia;
+    } else if (event.target.value === 'Africa') {
+      map = Africa;
     } else if (event.target.value === 'Europe') {
       map = Europe;
-    } else if (event.target.value === 'North America') {
-      map = NorthAmerica;
     } else if (event.target.value === 'Oceania') {
       map = Oceania;
+    } else if (event.target.value === 'North America') {
+      map = NorthAmerica;
     } else if (event.target.value === 'South America') {
       map = SouthAmerica;
+    } else {
+      map = Asia;
     }
   };
 
+  // When there is some data then dispatch continent.
   useEffect(() => {
     if (!items.length) {
       dispatch(fetchContinent(continent));

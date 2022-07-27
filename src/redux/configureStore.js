@@ -3,7 +3,7 @@ import logger from 'redux-logger';
 import { loadingBarReducer } from 'react-redux-loading-bar';
 import continentReducer, { fetchContinent } from './countries/countries';
 
-// Combine c
+// Combine reducer.
 const store = configureStore({
   reducer: {
     loadingBar: loadingBarReducer,
@@ -13,5 +13,4 @@ const store = configureStore({
 });
 
 store.dispatch(fetchContinent());
-
 export default store;
