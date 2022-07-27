@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Air Pollution
+# Covid 19
 
-This Repo is for creating  Air Pollution Air   using React and API, It is one of task in Microverse React-Redux Curricullum .
+This Repo is for showing  Covid-19 Cases is is based on M-Media-Group API. It is developed using React and Redux, It is one of task in Microverse React-Redux Curricullum .
 
 ## Built With
 
@@ -30,7 +30,7 @@ Tools
 
 # Project Name
 
-Air Pollution
+Covid 19
 
 # Live Demo
 <!-- [Live Link Heroku](https://hcalculator-app.herokuapp.com/)
