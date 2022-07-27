@@ -1,4 +1,4 @@
-import reducer, { loadCountries, loadCountry } from '../redux/countries/countries';
+import reducer, { loadContinent, loadCountry } from '../redux/countries/countries';
 
 test('should return the initial state', () => {
   const initialState = {
@@ -22,7 +22,7 @@ test('should handle adding countries', () => {
     { country: 'Testing country 2', confirmed: 2 },
   ];
 
-  const newState = reducer(prevState, loadCountries({
+  const newState = reducer(prevState, loadContinent({
     items,
     totalConfirmed: 5,
   }));
